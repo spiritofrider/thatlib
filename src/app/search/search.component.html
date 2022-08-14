@@ -1,0 +1,10 @@
+<div class="container p-5 my-5">
+    <form class="d-flex justify-content-center">
+        <select name="dropdownCriteria" id="dropdownCriteria" (change)="criteriaSelection($event)">
+            <option *ngFor="let criteria of dropdownCriteriaList" [value]="criteria.id">
+                {{criteria.name}}
+            </option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search"/>
+    </form>
+</div>
